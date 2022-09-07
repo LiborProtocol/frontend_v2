@@ -8,7 +8,16 @@ export default function Careers() {
   return (
     <div className="flex justify-around">
       <Box
-        layerStyle='primary'
+        
+        borderWidth = '2px'
+        p = '4px'
+        flexDirection = 'column'
+        justifyContent = 'space-between'
+        boxShadow = 'dark-lg'
+        borderColor = 'blackAlpha.500'
+        bg = '#393E46'
+        color = '#EEEEEE'
+        h = "450px"
         height='80vh'
         w="70%"
         borderRadius='80px'

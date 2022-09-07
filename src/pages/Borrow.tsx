@@ -371,9 +371,9 @@ export default function Borrow() {
             <Center>
               <Flex
                 boxShadow='dark-lg'
-                h="150px"
+                h="160px"
                 bg={boxColorSecondary}
-                w="80%"
+                w="90%"
                 color='black'
                 borderWidth='1px'
                 borderRadius='3xl'

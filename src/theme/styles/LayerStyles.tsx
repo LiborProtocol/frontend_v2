@@ -15,9 +15,9 @@ const layerStyles = {
   },
   secondary: {
     boxShadow: 'dark-lg',
-    h: "150px",
+    h: "160px",
     bg: '#00ADB5',
-    w: "80%",
+    w: "90%",
     color: 'black',
     borderWidth: '1px',
     borderRadius: '3xl',
@@ -44,7 +44,7 @@ const layerStyles = {
     justify:'between',
     flexDirection:'column',
     h:"130px",
-    w:"19%",
+    w:"21%",
   },
   
   numberInputField: {

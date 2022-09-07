@@ -29,12 +29,12 @@ import "@fontsource/berkshire-swash";
 import "@fontsource/merienda-one"; //great for info inside buttons
 import "@fontsource/pacifico"; //good for text, not for heading inside button
 import "@fontsource/just-another-hand";
-import "@fontsource/leckerli-one"; 
+import "@fontsource/leckerli-one";
 
 import logo from '../../assets/logo/logo_transparent.png';
 
 
- interface NavigationWithConnectedProps extends FlexProps {
+interface NavigationWithConnectedProps extends FlexProps {
   onOpen: () => void
 }
 
@@ -60,11 +60,10 @@ export const NavigationWithConnected = ({ onOpen, ...rest }: NavigationWithConne
         bg='red.400'
         icon={<FontAwesomeIcon icon={faBars} />}
       /> */}
-{/*        <Image  boxSize='85px' src={logo} pos='relative' top='8px'/>
- */}      <Heading size='3xl' color='#00EAFF' fontFamily='Oleo Script' pos='fixed' left='50%'> <Text> Libor Protocol </Text></Heading>
+      {/*        <Image boxSize='85px' src={logo} pos='relative' top='8px' />
+ */}       <Heading size='2xl' color='#00EAFF' fontFamily='Oleo Script' pos='fixed' left='50%'> <Text> Libor Protocol </Text></Heading>
       <Box className="px-2" color='#393E46'>
-      <ConnectButton />
-
+        <ConnectButton />
       </Box>
 
       <Box className="px-2">
