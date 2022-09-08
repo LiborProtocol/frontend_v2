@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import styled from 'styled-components';
+import { useEffect } from 'react';
+
 
 const renderTime = (name: string, time: number) => {
   return (
@@ -13,7 +15,7 @@ const renderTime = (name: string, time: number) => {
 
 export const Countdown = () => {
   const startTime = Date.now() / 1000; // use UNIX timestamp in seconds
-  const endTime = 1660420851; // use UNIX timestamp in seconds
+  const endTime = 1669420851; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - startTime;
   const days = Math.ceil(remainingTime / daySeconds);
@@ -24,6 +26,8 @@ export const Countdown = () => {
     size: 120,
     strokeWidth: 6,
   };
+
+  /* useEffect(() => {{startTime = Date.now() / 1000}}) */
 
   return (
     <$CountdownWrapper>
@@ -49,9 +53,9 @@ export const Countdown = () => {
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
         // @ts-ignore:next-line
-        onComplete={(totalElapsedTime) => [
-          remainingTime - totalElapsedTime > hourSeconds,
-        ]}
+        onComplete={(totalElapsedTime) => ({
+          shouldRepeat: remainingTime - totalElapsedTime > hourSeconds
+        })}
       >
         {({ elapsedTime }) =>
           renderTime('hours', getTimeHours(daySeconds - (elapsedTime ?? 0)))
@@ -66,9 +70,9 @@ export const Countdown = () => {
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
         // @ts-ignore:next-line
-        onComplete={(totalElapsedTime) => [
-          remainingTime - totalElapsedTime > minuteSeconds,
-        ]}
+        onComplete={(totalElapsedTime) => ({
+          shouldRepeat: remainingTime - totalElapsedTime > minuteSeconds
+        })}
       >
         {({ elapsedTime }) =>
           renderTime(
@@ -86,9 +90,10 @@ export const Countdown = () => {
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         // @ts-ignore:next-line
-        onComplete={(totalElapsedTime) => [
-          remainingTime - totalElapsedTime > 0,
-        ]}
+        onComplete=
+        {(totalElapsedTime) => ({
+          shouldRepeat: remainingTime - totalElapsedTime > 0
+        })}
       >
         {({ elapsedTime }) =>
           renderTime('seconds', getTimeSeconds(elapsedTime ?? 0))
