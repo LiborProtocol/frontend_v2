@@ -15,7 +15,7 @@ const renderTime = (name: string, time: number) => {
 
 export const Countdown = () => {
   const startTime = Date.now() / 1000; // use UNIX timestamp in seconds
-  const endTime = 1669420851; // use UNIX timestamp in seconds
+  const endTime = 1664568000; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - startTime;
   const days = Math.ceil(remainingTime / daySeconds);
