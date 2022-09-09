@@ -21,7 +21,7 @@ export const Dashboard = () => {
   return (
     <Box minH="100vh" bg={useColorModeValue('#222831', 'gray.900')}> {/*  #A6A6A6 */}
       <Sidebar onClose={() => onClose} display={{ base: 'none', md: 'block' }} />
-     {/*  <Drawer
+     {/*   <Drawer
         autoFocus={false}
         closeOnOverlayClick={true}
         isOpen={isOpen}
@@ -35,7 +35,7 @@ export const Dashboard = () => {
           <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
           <Sidebar onClose={onClose} w={{ base: 'full', md: '100%' }} />
         </DrawerContent>
-      </Drawer> */}
+      </Drawer>  */}
       <NavigationWithConnected onOpen={onOpen} />
       <Box ml={{ base: 0, md: 60 }} p="4">
       <Outlet />

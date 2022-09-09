@@ -76,27 +76,6 @@ export default function Borrow() {
 
   useEffect(() => { }, [])
 
-  /*   const getVaultsMinted
-      = useApiContract({
-        abi: abiOracle,
-        address: '0x60Dd1c948933333C7765DB945514e68Cbe103596',
-        functionName: "currentValue",
-        params: {},
-        chain: 'goerli',
-      }); */
-
-  /*   const GetPrice
-    = useWeb3ExecuteFunction({
-      abi: abiOracle,
-      contractAddress: '0x3594c87266E5A2DAA2697EfaD4263E5b8889E233',
-      functionName: "getLivePrice",
-      params: {
-        token_address: '0x326C977E6efc84E512bB9C30f76E30c160eD06FB'
-      },
-      network: 'goerli',
-    });
- */
-
   const mintVault
     = useWeb3ExecuteFunction({
       abi: abiVaultController,
