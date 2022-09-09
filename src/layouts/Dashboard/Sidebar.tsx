@@ -20,7 +20,7 @@ export const Sidebar = ({ onClose, ...rest }: SidebarProps) => {
   return (
     <Box
       transition="3s ease"
-      w='60'
+      w='200px'
       pos="fixed"
       h="full"
       className="sidebar text-white"

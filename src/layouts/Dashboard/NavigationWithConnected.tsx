@@ -42,9 +42,9 @@ export const NavigationWithConnected = ({ onOpen, ...rest }: NavigationWithConne
 
   return (
     <Flex
-      ml={{ base: 0, md: 60 }}
-      px={{ base: 4, md: 4 }}
-      height="16"
+      ml='200px'
+      px='14px'
+      height="56px" 
       alignItems="center"
       //bg={useColorModeValue('#393E46', 'gray.900')}
       borderBottomWidth="1px"

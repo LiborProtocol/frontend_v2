@@ -1,4 +1,4 @@
-import{at as e,ar as r,au as n,av as a}from"./index.b9f0cf7e.js";const l=e(a)`
+import{at as e,ar as r,au as n,av as a}from"./index.aeccd3ed.js";const l=e(a)`
     background-color: ${t=>{var o;return(o=t.customize)==null?void 0:o.backgroundColor}};
 
     span {

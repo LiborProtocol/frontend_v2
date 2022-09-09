@@ -15,8 +15,9 @@ export const COLORS = {
     VeryDarkBlue: "hsl(234, 17%, 12%)",
   },
 };
-
+/* 
 export const FONT = {
-  size: "14px",
+  size: "14px", 
   Family: "Red Hat Text",
 };
+ */

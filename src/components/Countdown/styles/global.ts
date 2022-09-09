@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
-import { WIDTH, COLORS, FONT } from "./constants";
+import { WIDTH, COLORS } from "./constants";
+
+/*         font-family: ${FONT.Family}, sans-serif;
+           font-size: ${FONT.size};
+ */
 
 const {
     neutral: { darkDesaturatedBlue, darkBlue, VeryDarkBlue },
@@ -10,8 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     html {
         @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@1,700&display=swap');
         
-        font-size: ${FONT.size};
-        font-family: ${FONT.Family}, sans-serif;
+       
         width: 100%;
         height: 100vh;
 
