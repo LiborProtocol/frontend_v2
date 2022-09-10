@@ -50,7 +50,7 @@ export const Sidebar = ({ onClose, ...rest }: SidebarProps) => {
                 <A
                   url={item.path}
                   className={`
-                relative flex flex-row items-center h-12 focus:outline-none  border-transparent  pr-6 mx-3 rounded-2xl
+                relative flex flex-row items-center h-12 focus:outline-none  border-transparent pr-6 mx-3 rounded-2xl
                 ${isActive
                       ? 'bg-cyan-600 text-F44336 font-bold'
                       : 'hover:bg-white  hover:text-cyan-600 font-bold' 
